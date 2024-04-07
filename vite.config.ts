@@ -1,16 +1,16 @@
 /*
  * @Author: duxinyues yongyuan253015@gmail.com
  * @Date: 2023-03-15 14:22:56
- * @LastEditors: duxinyues yongyuan253015@gmail.com
- * @LastEditTime: 2023-03-27 11:17:03
- * @FilePath: \vite-react\vite.config.ts
+ * @LastEditors: qingzhuyue qingzhuyue@foxmail.com
+ * @LastEditTime: 2024-04-01 19:56:11
+ * @FilePath: /vite-react/vite.config.ts
  * @Description:
  * Copyright (c) 2023 by ${duxinyues} email: ${yongyuan253015@gmail.com}, All Rights Reserved.
  */
 import { defineConfig, loadEnv, UserConfigExport, ConfigEnv } from "vite";
 import react from "@vitejs/plugin-react";
 import { resolve } from "path";
-import { viteBuildInfo } from "./build/info";
+// import { viteBuildInfo } from "./build/info";
 import { createStyleImportPlugin, AntdResolve } from "vite-plugin-style-import";
 import vitePluginImp from "vite-plugin-imp";
 const root: string = process.cwd();
@@ -36,7 +36,7 @@ export default defineConfig(({ mode }) => {
     root,
     plugins: [
       react(),
-      viteBuildInfo(),
+      // viteBuildInfo(),
       // createStyleImportPlugin({
       //   resolves: [AntdResolve()],
       // }),

@@ -1,15 +1,16 @@
 /*
  * @Author: duxinyues yongyuan253015@gmail.com
  * @Date: 2023-03-15 17:32:04
- * @LastEditors: duxinyues yongyuan253015@gmail.com
- * @LastEditTime: 2023-03-17 10:57:45
- * @FilePath: \vite-react\src\components\form\basicsForm.tsx
+ * @LastEditors: qingzhuyue qingzhuyue@foxmail.com
+ * @LastEditTime: 2024-02-27 14:54:56
+ * @FilePath: /vite-react/src/components/form/basicsForm.tsx
  * @Description:
  * Copyright (c) 2023 by ${duxinyues} email: ${yongyuan253015@gmail.com}, All Rights Reserved.
  */
 import { Form, Button, Space, Divider } from "antd";
 import "./index.scss";
 import { FormInput, FormPassword } from "./FormItem";
+import {useSelector} from 'react-redux'
 
 const tailLayout = {
   wrapperCol: { offset: 8, span: 16 },
