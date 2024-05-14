@@ -2,12 +2,13 @@
  * @Author: qingzhuyue qingzhuyue@foxmail.com
  * @Date: 2024-01-31 14:33:21
  * @LastEditors: qingzhuyue qingzhuyue@foxmail.com
- * @LastEditTime: 2024-04-02 00:47:39
+ * @LastEditTime: 2024-04-26 20:07:57
  * @FilePath: /vite-react/src/views/home/refs.jsx
  * @Description: 
  * Copyright (c) 2024 by ${qingzhuyue} email: ${qingzhuyue@foxmail.com}, All Rights Reserved.
  */
 import React from "react";
+import Child from "./Child";
 
 // class RefsComponent extends React.Component {
 //   constructor(props) {
@@ -60,6 +61,7 @@ function App(){
   return <div>
       <h2>{message}</h2>
       <button onClick={() => setMessage("更新数据")}>点击</button>
+      <Child />
     </div>
 }
 export default App;

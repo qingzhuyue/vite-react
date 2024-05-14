@@ -1,8 +1,8 @@
 /*
  * @Author: duxinyues yongyuan253015@gmail.com
  * @Date: 2023-03-05 23:27:49
- * @LastEditors: weiyy26445 weiyy26445@yunrong.cn
- * @LastEditTime: 2023-11-30 09:58:02
+ * @LastEditors: qingzhuyue qingzhuyue@foxmail.com
+ * @LastEditTime: 2024-05-14 21:31:28
  * @FilePath: /vite-react/src/routers/index.tsx
  * @Description:
  * Copyright (c) 2023 by ${duxinyues} email: ${yongyuan253015@gmail.com}, All Rights Reserved.
@@ -24,7 +24,6 @@ Object.keys(metaRouters).forEach((item: any) => {
 export const rootRouter = [
   {
     path: "/",
-    // element: lazyLoad(lazy(() => import("@/views/layout"))),
     element: lazyLoad(lazy(() => import("@/views/layout"))),
     children: [...routerArray],
   },
@@ -41,6 +40,10 @@ export const rootRouter = [
   {
     path: "/dataScreen",
     element: lazyLoad(lazy(() => import("@/views/dataScreen"))),
+  },
+  {
+    path: "/three",
+    element: lazyLoad(lazy(() => import("@/views/three"))),
   },
   {
     path: "*",
