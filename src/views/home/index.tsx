@@ -11,6 +11,7 @@ import Today from "./img/today.png";
 import sum from "./img/book_sum.png";
 import { DXFormFilter, DXSelect } from "duxin-design";
 import RefsComponent from "./refs";
+import CanvasComponent from "@/components/Canvas";
 
 type BackendUser = {
   id: number;
@@ -192,7 +193,7 @@ const Home = () => {
             form={form} handleFinish={() => handleFinish()} />
           <DXSelect config={defaultConfig} />
         </div> */}
-        <RefsComponent />
+        <CanvasComponent />
       </div>
 
     </div>
