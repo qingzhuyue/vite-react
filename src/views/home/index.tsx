@@ -143,7 +143,7 @@ const Home = () => {
   return (
     <div className="home">
       <div className="top-box">
-        {/* <div className="top-title">数据统计</div>
+        <div className="top-title">数据统计</div>
         <Tabs defaultActiveKey="1" items={tabsDate} onChange={changeTabs} />
         <div className="top-content">
           <div className="item-left">
@@ -187,13 +187,12 @@ const Home = () => {
             <div className="echarts-title">访问量占比</div>
             <div className="book-echarts">{renderPie}</div>
           </div>
-        </div> */}
+        </div>
         {/* <div className="charts-box">
           <DXFormFilter formItemList={formItemList}
             form={form} handleFinish={() => handleFinish()} />
           <DXSelect config={defaultConfig} />
         </div> */}
-        <CanvasComponent />
       </div>
 
     </div>

@@ -2,7 +2,7 @@
  * @Author: duxinyues yongyuan253015@gmail.com
  * @Date: 2023-02-27 17:35:23
  * @LastEditors: qingzhuyue qingzhuyue@foxmail.com
- * @LastEditTime: 2024-05-14 21:55:03
+ * @LastEditTime: 2024-05-21 13:38:30
  * @FilePath: /vite-react/src/store/redux/menu/menu.ts
  * @Description: 左侧菜单，一般是由后端返回的
  * Copyright (c) 2023 by ${duxinyues} email: ${yongyuan253015@gmail.com}, All Rights Reserved.
@@ -19,37 +19,34 @@ const menuState = [
     key: "dataScreen",
     router: "/dataScreen",
   },
-  {
-    title: "组件",
-    key: "component",
-    router: null,
-    children: [
-      {
-        title: "表格查询模块",
-        key: "order",
-        router: "/order",
-      },
-      {
-        title: "表单",
-        key: "basicsForm",
-        router: "/basicsForm",
-      },
-      // {
-      //   title: "Excel表格",
-      //   key: "excelTable",
-      //   router: "/excel-table",
-      // },
-      {
-        title: "签字",
-        key: "canvas-sign",
-        router: "/canvas-sign",
-      },
-    ],
-  },
+  // {
+  //   title: "组件",
+  //   key: "component",
+  //   router: null,
+  //   children: [
+  //     {
+  //       title: "表格查询模块",
+  //       key: "order",
+  //       router: "/order",
+  //     },
+  //     {
+  //       title: "表单",
+  //       key: "basicsForm",
+  //       router: "/basicsForm",
+  //     },
+  //   ],
+  // },
   {
     title: "Three.js作品",
     key: "threejs",
-    router: "/three",
+    router: null,
+    children: [
+      {
+        title: "3D太空",
+        key: "3D",
+        router: "/three3D",
+      },
+    ],
   },
   {
     title: "Echarts",

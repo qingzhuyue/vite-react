@@ -1,3 +1,12 @@
+/*
+ * @Author: qingzhuyue qingzhuyue@foxmail.com
+ * @Date: 2023-08-14 20:05:15
+ * @LastEditors: qingzhuyue qingzhuyue@foxmail.com
+ * @LastEditTime: 2024-05-21 13:39:06
+ * @FilePath: /vite-react/src/views/echarts/SmoothChart.tsx
+ * @Description: 
+ * Copyright (c) 2024 by ${qingzhuyue} email: ${qingzhuyue@foxmail.com}, All Rights Reserved.
+ */
 import { useRef, useEffect } from "react";
 import * as echarts from "echarts";
 import { createArray } from "@/utils";
@@ -77,7 +86,7 @@ export default function SmoothChart() {
           lineStyle: { width: 0 },
         },
       });
-    }, 10000);
+    }, 2000);
     return () => clearInterval(timer);
   }, []);
   return (
