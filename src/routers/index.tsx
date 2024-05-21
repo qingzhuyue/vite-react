@@ -42,6 +42,12 @@ export const rootRouter = [
     element: lazyLoad(lazy(() => import("@/views/dataScreen"))),
   },
   {
+    path: "/three3D",
+    element: lazyLoad(
+     lazy(() => import("@/views/three/space"))
+    ),
+  },
+  {
     path: "/three",
     element: lazyLoad(lazy(() => import("@/views/three"))),
   },

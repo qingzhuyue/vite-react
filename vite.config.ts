@@ -2,7 +2,7 @@
  * @Author: duxinyues yongyuan253015@gmail.com
  * @Date: 2023-03-15 14:22:56
  * @LastEditors: qingzhuyue qingzhuyue@foxmail.com
- * @LastEditTime: 2024-04-01 19:56:11
+ * @LastEditTime: 2024-05-21 14:07:56
  * @FilePath: /vite-react/vite.config.ts
  * @Description:
  * Copyright (c) 2023 by ${duxinyues} email: ${yongyuan253015@gmail.com}, All Rights Reserved.
@@ -49,6 +49,7 @@ export default defineConfig(({ mode }) => {
         ],
       }),
     ],
+    assetsInclude: ['**/*.glb'],
     css: {
       // css预处理器
       preprocessorOptions: {

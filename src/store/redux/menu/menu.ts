@@ -2,7 +2,7 @@
  * @Author: duxinyues yongyuan253015@gmail.com
  * @Date: 2023-02-27 17:35:23
  * @LastEditors: qingzhuyue qingzhuyue@foxmail.com
- * @LastEditTime: 2024-05-21 13:38:30
+ * @LastEditTime: 2024-05-21 14:37:09
  * @FilePath: /vite-react/src/store/redux/menu/menu.ts
  * @Description: 左侧菜单，一般是由后端返回的
  * Copyright (c) 2023 by ${duxinyues} email: ${yongyuan253015@gmail.com}, All Rights Reserved.
@@ -18,6 +18,11 @@ const menuState = [
     title: "可视化",
     key: "dataScreen",
     router: "/dataScreen",
+  },
+  {
+    title: "3D空间",
+    key: "3D",
+    router: "/three3D",
   },
   // {
   //   title: "组件",
@@ -41,10 +46,11 @@ const menuState = [
     key: "threejs",
     router: null,
     children: [
+      
       {
-        title: "3D太空",
-        key: "3D",
-        router: "/three3D",
+        title: "模型组合",
+        key: "portfolio",
+        router: "/portfolio",
       },
     ],
   },

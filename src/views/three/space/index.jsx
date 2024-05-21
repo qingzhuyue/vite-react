@@ -2,7 +2,7 @@
  * @Author: qingzhuyue qingzhuyue@foxmail.com
  * @Date: 2024-05-21 13:15:03
  * @LastEditors: qingzhuyue qingzhuyue@foxmail.com
- * @LastEditTime: 2024-05-21 13:36:04
+ * @LastEditTime: 2024-05-21 13:49:55
  * @FilePath: /vite-react/src/views/three/space/index.jsx
  * @Description: 
  * Copyright (c) 2024 by ${qingzhuyue} email: ${qingzhuyue@foxmail.com}, All Rights Reserved.
@@ -34,8 +34,8 @@ export default function OuterSpace() {
     const depth = 1400; // 盒子的深度
 
     const container = document.getElementById('threeContainer');
-    const width = 1000;
-    const height = 500;
+    const width = window.innerWidth;
+    const height = window.innerHeight;
     const fov = 15;
     const distance = width / 2 / Math.tan(Math.PI / 12);
     const zAxisNumber = Math.floor(distance - depth / 2);

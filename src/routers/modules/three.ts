@@ -2,7 +2,7 @@
  * @Author: qingzhuyue qingzhuyue@foxmail.com
  * @Date: 2024-05-14 21:53:15
  * @LastEditors: qingzhuyue qingzhuyue@foxmail.com
- * @LastEditTime: 2024-05-21 13:30:44
+ * @LastEditTime: 2024-05-21 15:07:18
  * @FilePath: /vite-react/src/routers/modules/three.ts
  * @Description: 
  * Copyright (c) 2024 by ${qingzhuyue} email: ${qingzhuyue@foxmail.com}, All Rights Reserved.
@@ -14,9 +14,9 @@ import lazyLoad from "../utils/utlis";
 
 const threeRouter: Array<RouteObject> = [
   {
-    path: "/three3D",
+    path: "/portfolio",
     element: lazyLoad(
-      React.lazy(() => import("@/views/three/space"))
+      React.lazy(() => import("@/views/three/portfolio"))
     ),
   },
 ];
