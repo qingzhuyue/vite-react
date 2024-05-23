@@ -2,7 +2,7 @@
  * @Author: qingzhuyue qingzhuyue@foxmail.com
  * @Date: 2024-05-22 16:35:34
  * @LastEditors: qingzhuyue qingzhuyue@foxmail.com
- * @LastEditTime: 2024-05-22 17:52:47
+ * @LastEditTime: 2024-05-23 15:12:22
  * @FilePath: /react/src/routers/index.jsx
  * @Description: 
  * Copyright (c) 2024 by ${qingzhuyue} email: ${qingzhuyue@foxmail.com}, All Rights Reserved.
@@ -31,16 +31,16 @@ export const rootRouter = [
       key: "login",
     },
   },
-  // {
-  //   path: "/dataScreen",
-  //   element: lazyLoad(lazy(() => import("@/views/dataScreen"))),
-  // },
-  // {
-  //   path: "/three3D",
-  //   element: lazyLoad(
-  //    lazy(() => import("@/views/three/space"))
-  //   ),
-  // },
+  {
+    path: "/dataScreen",
+    element: lazyLoad(lazy(() => import("@/views/dataScreen"))),
+  },
+  {
+    path: "/three3D",
+    element: lazyLoad(
+     lazy(() => import("@/views/three/space"))
+    ),
+  },
   {
     path: "*",
     element: lazyLoad(lazy(() => import("@/pages/NoMatch"))),

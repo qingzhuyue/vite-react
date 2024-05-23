@@ -2,12 +2,12 @@
  * @Author: qingzhuyue qingzhuyue@foxmail.com
  * @Date: 2024-05-22 15:58:08
  * @LastEditors: qingzhuyue qingzhuyue@foxmail.com
- * @LastEditTime: 2024-05-22 16:44:13
+ * @LastEditTime: 2024-05-23 15:42:25
  * @FilePath: /react/src/App.jsx
  * @Description: 
  * Copyright (c) 2024 by ${qingzhuyue} email: ${qingzhuyue@foxmail.com}, All Rights Reserved.
  */
-import { BrowserRouter } from "react-router-dom";
+import { HashRouter } from "react-router-dom";
 import { connect } from "react-redux";
 import "./App.css";
 import useTheme from "./hooks/useTheme";
@@ -18,9 +18,9 @@ function App(props) {
   // const isOnline = useOnlineStatus();
   useTheme(weakOrGray);
   return (
-    <BrowserRouter>
+    <HashRouter>
         <Router />
-    </BrowserRouter>
+    </HashRouter>
   );
 }
 const mapStateToProps = (state) => {
