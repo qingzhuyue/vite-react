@@ -2,7 +2,7 @@
  * @Author: qingzhuyue qingzhuyue@foxmail.com
  * @Date: 2024-05-22 16:35:34
  * @LastEditors: qingzhuyue qingzhuyue@foxmail.com
- * @LastEditTime: 2024-05-23 15:12:22
+ * @LastEditTime: 2024-05-24 14:43:52
  * @FilePath: /react/src/routers/index.jsx
  * @Description: 
  * Copyright (c) 2024 by ${qingzhuyue} email: ${qingzhuyue@foxmail.com}, All Rights Reserved.
@@ -13,7 +13,6 @@ import lazyLoad from "./utils/utlis";
 import all from "./modules"
 
 
-console.log("所有路由",all)
 export const rootRouter = [
   {
     path: "/",

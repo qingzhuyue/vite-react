@@ -2,7 +2,7 @@
  * @Author: qingzhuyue qingzhuyue@foxmail.com
  * @Date: 2024-05-22 16:23:32
  * @LastEditors: qingzhuyue qingzhuyue@foxmail.com
- * @LastEditTime: 2024-05-22 16:23:33
+ * @LastEditTime: 2024-05-24 14:50:49
  * @FilePath: /react/src/store/redux/menu/menu.js
  * @Description: 
  * Copyright (c) 2024 by ${qingzhuyue} email: ${qingzhuyue@foxmail.com}, All Rights Reserved.
@@ -60,24 +60,19 @@ const menuState = [
     router: null,
     children: [
       {
-        title: "水型图",
-        key: "waterChart",
-        router: "/waterChart",
-      },
-      {
         title: "柱形图",
         key: "barChart",
-        router: "/barChart",
+        router: "/echarts/barChart",
       },
       {
         title: "曲线图",
         key: "curveChart",
-        router: "/curveChart",
+        router: "/echarts/curveChart",
       },
       {
         title: "曲线面积图",
         key: "smoothChart",
-        router: "/smoothChart",
+        router: "/echarts/smoothChart",
       },
     ],
   },
@@ -89,17 +84,17 @@ const menuState = [
       {
         title: "403",
         key: "403",
-        router: "/403",
+        router: "/error/403",
       },
       {
         title: "404",
         key: "404",
-        router: "/404",
+        router: "/error/404",
       },
       {
         title: "500",
         key: "500",
-        router: "/500",
+        router: "/error/500",
       },
     ],
   },
