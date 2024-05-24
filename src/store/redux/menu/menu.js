@@ -2,7 +2,7 @@
  * @Author: qingzhuyue qingzhuyue@foxmail.com
  * @Date: 2024-05-22 16:23:32
  * @LastEditors: qingzhuyue qingzhuyue@foxmail.com
- * @LastEditTime: 2024-05-24 14:50:49
+ * @LastEditTime: 2024-05-24 15:11:49
  * @FilePath: /react/src/store/redux/menu/menu.js
  * @Description: 
  * Copyright (c) 2024 by ${qingzhuyue} email: ${qingzhuyue@foxmail.com}, All Rights Reserved.
@@ -20,37 +20,24 @@ const menuState = [
     router: "/dataScreen",
   },
   {
-    title: "3D空间",
-    key: "3D",
-    router: "/three3D",
-  },
-  // {
-  //   title: "组件",
-  //   key: "component",
-  //   router: null,
-  //   children: [
-  //     {
-  //       title: "表格查询模块",
-  //       key: "order",
-  //       router: "/order",
-  //     },
-  //     {
-  //       title: "表单",
-  //       key: "basicsForm",
-  //       router: "/basicsForm",
-  //     },
-  //   ],
-  // },
-  {
-    title: "Three.js作品",
+    title: "Three",
     key: "threejs",
     router: null,
     children: [
-      
+      {
+        title: "3D空间",
+        key: "3D",
+        router: "/three/three3D",
+      },
       {
         title: "模型组合",
         key: "portfolio",
-        router: "/portfolio",
+        router: "/three/portfolio",
+      },
+      {
+        title: "ArtLab",
+        key: "artLab",
+        router: "/artLab",
       },
     ],
   },

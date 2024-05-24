@@ -41,6 +41,12 @@ export const rootRouter = [
     ),
   },
   {
+    path:"/artLab",
+    element: lazyLoad(
+      lazy(() => import("../views/three/artLab"))
+     ),
+  },
+  {
     path: "*",
     element: lazyLoad(lazy(() => import("@/pages/NoMatch"))),
   },

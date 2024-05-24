@@ -2,7 +2,7 @@
  * @Author: qingzhuyue qingzhuyue@foxmail.com
  * @Date: 2024-05-22 16:47:47
  * @LastEditors: qingzhuyue qingzhuyue@foxmail.com
- * @LastEditTime: 2024-05-22 16:53:38
+ * @LastEditTime: 2024-05-24 17:32:16
  * @FilePath: /react/src/views/layout/index.jsx
  * @Description: 
  * Copyright (c) 2024 by ${qingzhuyue} email: ${qingzhuyue@foxmail.com}, All Rights Reserved.
@@ -48,6 +48,7 @@ function Container(props) {
     }
   );
   useEffect(() => {
+    // 未登录。跳转到登录页面
     if (!token) {
       navigate("/login");
     }
