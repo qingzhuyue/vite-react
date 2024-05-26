@@ -2,7 +2,7 @@
  * @Author: qingzhuyue qingzhuyue@foxmail.com
  * @Date: 2024-05-22 16:35:34
  * @LastEditors: qingzhuyue qingzhuyue@foxmail.com
- * @LastEditTime: 2024-05-24 14:43:52
+ * @LastEditTime: 2024-05-26 11:33:14
  * @FilePath: /react/src/routers/index.jsx
  * @Description: 
  * Copyright (c) 2024 by ${qingzhuyue} email: ${qingzhuyue@foxmail.com}, All Rights Reserved.
@@ -35,7 +35,7 @@ export const rootRouter = [
     element: lazyLoad(lazy(() => import("@/views/dataScreen"))),
   },
   {
-    path: "/three3D",
+    path: "/three/three3D",
     element: lazyLoad(
      lazy(() => import("@/views/three/space"))
     ),
