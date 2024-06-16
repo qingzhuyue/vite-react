@@ -2,8 +2,8 @@
  * @Author: qingzhuyue qingzhuyue@foxmail.com
  * @Date: 2024-05-22 16:35:34
  * @LastEditors: qingzhuyue qingzhuyue@foxmail.com
- * @LastEditTime: 2024-05-26 11:33:14
- * @FilePath: /react/src/routers/index.jsx
+ * @LastEditTime: 2024-06-16 21:52:56
+ * @FilePath: /vite-react/src/routers/index.jsx
  * @Description: 
  * Copyright (c) 2024 by ${qingzhuyue} email: ${qingzhuyue@foxmail.com}, All Rights Reserved.
  */
@@ -43,8 +43,14 @@ export const rootRouter = [
   {
     path:"/artLab",
     element: lazyLoad(
-      lazy(() => import("../views/three/artLab"))
+      lazy(() => import("@/views/three/artLab"))
      ),
+  },
+  {
+    path: "/three/spiral",
+    element: lazyLoad(
+      lazy(() => import("@/views/three/spiral"))
+    ),
   },
   {
     path: "*",
