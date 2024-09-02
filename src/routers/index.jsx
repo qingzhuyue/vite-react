@@ -53,6 +53,12 @@ export const rootRouter = [
     ),
   },
   {
+    path: "/three/particle",
+    element: lazyLoad(
+      lazy(() => import("@/views/three/particle"))
+    ),
+  },
+  {
     path: "*",
     element: lazyLoad(lazy(() => import("@/pages/NoMatch"))),
   },

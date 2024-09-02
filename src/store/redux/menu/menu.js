@@ -2,7 +2,7 @@
  * @Author: qingzhuyue qingzhuyue@foxmail.com
  * @Date: 2024-05-22 16:23:32
  * @LastEditors: qingzhuyue qingzhuyue@foxmail.com
- * @LastEditTime: 2024-06-16 21:43:37
+ * @LastEditTime: 2024-09-02 16:47:09
  * @FilePath: /vite-react/src/store/redux/menu/menu.js
  * @Description: 
  * Copyright (c) 2024 by ${qingzhuyue} email: ${qingzhuyue@foxmail.com}, All Rights Reserved.
@@ -40,9 +40,14 @@ const menuState = [
         router: "/artLab",
       },
       {
-        title: "螺旋颗粒",
+        title: "矩形",
         key: " spiral",
         router: "/three/spiral",
+      },
+      {
+        title: "粒子",
+        key: " Particle",
+        router: "/three/particle",
       },
     ],
   },
