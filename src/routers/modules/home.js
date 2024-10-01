@@ -2,8 +2,8 @@
  * @Author: qingzhuyue qingzhuyue@foxmail.com
  * @Date: 2024-05-22 16:38:56
  * @LastEditors: qingzhuyue qingzhuyue@foxmail.com
- * @LastEditTime: 2024-05-22 17:13:42
- * @FilePath: /react/src/routers/modules/home.js
+ * @LastEditTime: 2024-10-01 22:19:44
+ * @FilePath: /free/src/routers/modules/home.js
  * @Description: 
  * Copyright (c) 2024 by ${qingzhuyue} email: ${qingzhuyue@foxmail.com}, All Rights Reserved.
  */
@@ -17,6 +17,10 @@ const homeRouter = [
   {
     path: "/home",
     element: lazyLoad(lazy(() => import("@/views/home"))),
+  },
+  {
+    path: "/users/list",
+    element: lazyLoad(lazy(() => import("@/views/user"))),
   },
 ];
 

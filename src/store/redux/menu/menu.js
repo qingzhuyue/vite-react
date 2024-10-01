@@ -2,8 +2,8 @@
  * @Author: qingzhuyue qingzhuyue@foxmail.com
  * @Date: 2024-05-22 16:23:32
  * @LastEditors: qingzhuyue qingzhuyue@foxmail.com
- * @LastEditTime: 2024-09-02 16:47:09
- * @FilePath: /vite-react/src/store/redux/menu/menu.js
+ * @LastEditTime: 2024-10-01 22:14:57
+ * @FilePath: /free/src/store/redux/menu/menu.js
  * @Description: 
  * Copyright (c) 2024 by ${qingzhuyue} email: ${qingzhuyue@foxmail.com}, All Rights Reserved.
  */
@@ -13,6 +13,11 @@ const menuState = [
     title: "首页",
     key: "home",
     router: "/",
+  },
+  {
+    title: "用户管理",
+    key: "users",
+    router: "/users/list",
   },
   {
     title: "可视化",
