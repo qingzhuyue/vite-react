@@ -2,8 +2,8 @@
  * @Author: qingzhuyue qingzhuyue@foxmail.com
  * @Date: 2024-05-22 15:58:08
  * @LastEditors: qingzhuyue qingzhuyue@foxmail.com
- * @LastEditTime: 2024-09-21 17:06:52
- * @FilePath: /vite-react/vite.config.js
+ * @LastEditTime: 2024-10-02 21:00:36
+ * @FilePath: /free/vite.config.js
  * @Description: 
  * Copyright (c) 2024 by ${qingzhuyue} email: ${qingzhuyue@foxmail.com}, All Rights Reserved.
  */
@@ -75,7 +75,7 @@ export default defineConfig(({ mode }) => {
         // 带选项写法：http://localhost:5173/api/bar -> http://jsonplaceholder.typicode.com/bar
         "/api": {
           // target: "http://47.108.65.133:8098",
-          target: "http://localhost:3000",
+          target: "http://192.168.0.110:3000",
           changeOrigin: true,
           // rewrite: (path) => path.replace(/^\/api/, ""),
         },
