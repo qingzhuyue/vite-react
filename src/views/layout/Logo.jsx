@@ -2,8 +2,8 @@
  * @Author: qingzhuyue qingzhuyue@foxmail.com
  * @Date: 2024-05-22 16:50:21
  * @LastEditors: qingzhuyue qingzhuyue@foxmail.com
- * @LastEditTime: 2024-05-22 16:50:22
- * @FilePath: /react/src/views/layout/Logo.jsx
+ * @LastEditTime: 2024-10-02 19:24:37
+ * @FilePath: /free/src/views/layout/Logo.jsx
  * @Description: 
  * Copyright (c) 2024 by ${qingzhuyue} email: ${qingzhuyue@foxmail.com}, All Rights Reserved.
  */
@@ -15,7 +15,7 @@ const Logo = (props) => {
   return (
     <div className="logo-box">
       <img src={logo} alt="logo" />
-      {!isCollapse ? <h3>Vite React Admin</h3> : null}
+      {!isCollapse ? <h3>玩鸿蒙后台</h3> : null}
     </div>
   );
 };

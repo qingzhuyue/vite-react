@@ -2,8 +2,8 @@
  * @Author: qingzhuyue qingzhuyue@foxmail.com
  * @Date: 2024-05-22 16:47:47
  * @LastEditors: qingzhuyue qingzhuyue@foxmail.com
- * @LastEditTime: 2024-05-24 17:32:16
- * @FilePath: /react/src/views/layout/index.jsx
+ * @LastEditTime: 2024-10-02 19:23:16
+ * @FilePath: /free/src/views/layout/index.jsx
  * @Description: 
  * Copyright (c) 2024 by ${qingzhuyue} email: ${qingzhuyue@foxmail.com}, All Rights Reserved.
  */
@@ -20,7 +20,6 @@ const { Content, Footer, Sider } = Layout;
 function Container(props) {
   const { footer, isCollapse, token } = props;
   const navigate = useNavigate();
-  const router = useLocation();
   const onChangeRouter = (router) => {
     navigate(router);
   };
@@ -89,7 +88,7 @@ function Container(props) {
                 lineHeight: "30px",
               }}
             >
-              React 实例 {new Date().getFullYear()}
+              后台管理 {new Date().getFullYear()}
             </Footer>
           )}
         </Content>

@@ -1,4 +1,4 @@
-import { useState } from "react";
+import { useState, useEffect } from "react";
 import { Form, Input, Button, message } from "antd";
 import logo from "@/assets/vite.svg";
 import loginLeft from "@/assets/login_left.png";
@@ -22,31 +22,38 @@ function Login(props) {
   const onFinish = async (form) => {
     try {
       setLoading(true);
-      if (form.username !== "admin" || form.password !== "123456") {
-        messageApi.open({
-          type: "error",
-          content: "用户名或者密码错误！",
-        });
-        return;
-      }
-      navigate("/home");
-      setToken("admin_123456" + new Date().getTime());
-      setUserInfo({ userName: "admin" });
 
-      // const response = await loginApi(form);
-      // const { message, data } = response;
-      // setToken(data?.accessToken);
-      // setUserInfo({ userName: data?.username });
-      // // 获取用户对应的权限路由和按钮权限
-      // // setAuthButtons({});
-      // // setAuthRouters([])
-      // messageApi
-      //   .open({
-      //     type: "success",
-      //     content: message,
-      //     duration: 1,
-      //   })
-      //   .then(() => navigate("/home"));
+      fetch("/api/login", {
+        method: "post",
+        headers: {
+          'Content-Type': 'application/json'
+        },
+        body: JSON.stringify({ username: form.username, phone: "18286430374", password: form.password }),
+      })
+        .then(response => response.json())
+        .then(data => {
+          if (data?.code === 401) {
+            return messageApi.open({
+              type: "error",
+              content: data.msg,
+            });
+          }
+
+          if(data?.code === 200){
+            setToken(data?.data?.token);
+            setUserInfo(data)
+            return messageApi.open({
+              type: "success",
+              content: data.msg,
+              duration: 2,
+            }).then(() => navigate("/home"));;
+          }
+
+          return messageApi.open({
+            content: data?.msg,
+          });
+        })
+        .catch((error) => console.error('Error:', error));
     } finally {
       setLoading(false);
     }
@@ -64,14 +71,14 @@ function Login(props) {
         <div className="login-form">
           <div className="login-logo">
             <img className="login-icon" src={logo} alt="logo" />
-            <span className="logo-text">Vite-React-Admin</span>
+            <span className="logo-text">后台管理</span>
           </div>
           <Form
             form={form}
             labelCol={{ span: 5 }}
             initialValues={{
               remember: true,
-              username: "admin",
+              username: "admin12",
               password: "123456",
             }}
             onFinish={onFinish}

@@ -77,17 +77,7 @@ const Home = () => {
     window.addEventListener("offline", () => {
       console.log("网络不可用")
     })
-
-    fetch("/api/login", {
-      method: "post",
-      headers: {
-        'Content-Type': 'application/json'
-      },
-      body: JSON.stringify({ username: "admin", phone: "18286430374" }),
-    })
-      .then(response => response.json())
-      .then(data => console.log(data))
-      .catch((error) => console.error('Error:', error));
+    
   }, [date]);
   const renderPie = useMemo(() => <Pie data={pieData} />, [date]);
   const formItemList = [
